@@ -19,9 +19,7 @@ class Usuario{
         this.libros.push(libro)
     }
     getBookNames(){
-        this.libros.map(element => {
-            console.log(`${element.nombre}`)
-        })
+       return this.libros.map (element => element.nombre)
     }
 
 }
@@ -37,4 +35,4 @@ console.log(Mat.countMascotas())
 Mat.addBook({nombre: "libro2", autor: "autor2"})
 console.log(Mat.libros)
 
-Mat.getBookNames()
+console.log(Mat.getBookNames())
